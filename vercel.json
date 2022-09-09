@@ -1,9 +1,15 @@
-
 {
-  "rewrites": [
+  "version": 2,
+  "builds": [
     {
-      "source": "/api/:match*",
-      "destination": "https://kingstrong-kingstrongers.vercel.app/:match*"
+      "src": "./index.js",
+      "use": "@vercel/node@2.5.10"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
     }
   ]
 }
