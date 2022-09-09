@@ -13,3 +13,12 @@
     }
   ]
 }
+
+{
+  "rewrites": [
+    {
+      "source": "/api/:match*",
+      "destination": "https://kingstrong-kingstrongers.vercel.app/:match*"
+    }
+  ]
+}
